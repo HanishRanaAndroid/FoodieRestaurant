@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMyOrder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/silver_white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortydp"
+        android:background="@color/foodie_color"
+        android:gravity="center"
+        android:padding="@dimen/tendp"
+        android:text="@string/select_address"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/upperLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            map:cameraZoom="10"
+            tools:context="com.valle.styledmap.MapsActivityString" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/marker_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upperLayout"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:padding="@dimen/tendp"
+        android:text="@string/address"
+        android:textColor="@color/foodie_color"
+        android:textSize="@dimen/dim14sp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginTop="@dimen/fifteendp"
+                android:layout_marginRight="@dimen/twentydp"
+                android:paddingLeft="@dimen/tendp"
+                android:shadowColor="@color/shadow_color"
+                android:text="@string/ubicaci_n_del_mapa"
+                android:textColor="@color/foodie_color"
+                android:visibility="gone"
+                android:textColorHint="@color/light_black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/dim14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMapLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginTop="@dimen/tendp"
+                android:layout_marginRight="@dimen/twentydp"
+                android:paddingLeft="@dimen/tendp"
+                android:visibility="gone"
+                android:shadowColor="@color/shadow_color"
+                android:text=""
+                android:textColor="@color/light_black"
+                android:textColorHint="@color/light_black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/dim14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginTop="@dimen/tendp"
+                android:layout_marginRight="@dimen/twentydp"
+                android:background="@drawable/edit_background"
+                android:hint="@string/address"
+                android:padding="@dimen/tendp"
+                android:shadowColor="@color/shadow_color"
+                android:textColor="@color/light_black"
+                android:textColorHint="@color/light_black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/dim14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etAdministrador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginTop="@dimen/fifteendp"
+                android:layout_marginRight="@dimen/twentydp"
+                android:background="@drawable/edit_background"
+                android:hint="Administrador"
+                android:padding="@dimen/tendp"
+                android:shadowColor="@color/shadow_color"
+                android:textColor="@color/light_black"
+                android:textColorHint="@color/light_black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/dim14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etFlatNo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fortydp"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginTop="@dimen/fifteendp"
+                android:layout_marginRight="@dimen/twentydp"
+                android:background="@drawable/edit_background"
+                android:hint="@string/house"
+                android:paddingLeft="@dimen/tendp"
+                android:shadowColor="@color/shadow_color"
+                android:textColor="@color/light_black"
+                android:textColorHint="@color/light_black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/dim14sp"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etLandmark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fortydp"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginTop="@dimen/fifteendp"
+                android:layout_marginRight="@dimen/twentydp"
+                android:background="@drawable/edit_background"
+                android:hint="@string/landmark"
+                android:paddingLeft="@dimen/tendp"
+                android:shadowColor="@color/shadow_color"
+                android:textColor="@color/light_black"
+                android:textColorHint="@color/light_black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/dim14sp"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSaveAddressAndContinue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginTop="@dimen/twentydp"
+                android:layout_marginRight="@dimen/twentydp"
+                android:layout_marginBottom="@dimen/twentydp"
+                android:background="@drawable/btn_red_back"
+                android:gravity="center"
+                android:padding="@dimen/tendp"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/eighteendp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

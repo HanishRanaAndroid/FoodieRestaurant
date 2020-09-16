@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/tendp">
+
+        <com.valle.resturantfoodieapp.utils.RoundRectCornerImageView
+            android:id="@+id/ivRestImage"
+            android:layout_width="@dimen/dim120dp"
+            android:layout_height="@dimen/dim120dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/upload" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fivedp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/fivedp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRestaurantName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteensp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRestaurantPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fivedp"
+                android:text=""
+                android:textSize="@dimen/dim14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRestaurantAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fivedp"
+                android:text=""
+                android:textSize="@dimen/dim14sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCurrentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="@dimen/fivedp"
+                android:gravity="top"
+                android:text=""
+                android:textSize="@dimen/dim14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/dim14sp" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="@dimen/fivedp"
+                    android:isIndicator="false"
+                    android:numStars="5"
+                    android:paddingTop="@dimen/fivedp"
+                    android:paddingBottom="@dimen/fivedp"
+                    android:progressTint="@color/green"
+                    android:theme="@style/Widget.AppCompat.RatingBar.Small" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim1dp"
+        android:background="@color/light_black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/tendp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_your_presence"
+            android:textColor="@color/foodie_color"
+            android:textSize="@dimen/sixteensp" />
+
+        <Switch
+            android:id="@+id/swPresense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:switchMinWidth="50dp"
+            android:thumb="@drawable/switch_thumb_selector"
+            android:track="@drawable/switch_track_selector" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim1dp"
+        android:background="@color/light_black" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOrdersList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fifteendp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llNoOrderYet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="@dimen/dim100dp"
+            android:layout_height="@dimen/dim100dp"
+            android:src="@drawable/order_preparingfile" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/no_order_yet"
+            android:textColor="@color/light_black" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

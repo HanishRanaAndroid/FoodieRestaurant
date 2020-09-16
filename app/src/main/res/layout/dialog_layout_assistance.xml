@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/fivedp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/twentyfivedp"
+        android:layout_height="@dimen/twentyfivedp"
+        android:layout_gravity="right"
+        android:src="@drawable/cancel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/assistance"
+        android:textColor="@color/foodie_color"
+        android:textSize="@dimen/sixteensp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tendp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCallDeliveryBoy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/tendp"
+            android:background="@drawable/rectangular_back_red"
+            android:gravity="center"
+            android:paddingLeft="@dimen/fifteendp"
+            android:paddingTop="@dimen/tendp"
+            android:paddingRight="@dimen/fifteendp"
+            android:paddingBottom="@dimen/tendp"
+            android:text="@string/call_delivery_boy"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCallAppAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/tendp"
+            android:background="@drawable/rectangular_back_green"
+            android:gravity="center"
+            android:paddingLeft="@dimen/fifteendp"
+            android:paddingTop="@dimen/tendp"
+            android:paddingRight="@dimen/fifteendp"
+            android:paddingBottom="@dimen/tendp"
+            android:text="@string/servicio_de_asistencia"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

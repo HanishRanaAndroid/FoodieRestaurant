@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/tendp"
+        android:textStyle="bold"
+        android:text="@string/alert"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/eighteensp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/tendp"
+        android:textSize="@dimen/fifteensp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btMessOk"
+        android:layout_width="@dimen/dim150dp"
+        android:layout_height="@dimen/fortydp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/tendp"
+        android:textSize="@dimen/dim14sp"
+        android:background="@color/colorAccent"
+        android:text="@string/ok"
+        android:layout_marginBottom="@dimen/fifteendp"
+        android:textColor="@color/white" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

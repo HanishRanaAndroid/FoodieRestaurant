@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/tendp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llOrderDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOrderNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteensp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llOrderedItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOrderDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim2dp"
+                android:text=""
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/dim14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOrderAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim2dp"
+                android:text=""
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/dim14sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/fivedp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOrderReady"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/radius_green_back"
+                android:gravity="center"
+                android:paddingLeft="@dimen/twentydp"
+                android:paddingTop="@dimen/fivedp"
+                android:paddingRight="@dimen/twentydp"
+                android:paddingBottom="@dimen/fivedp"
+                android:text="@string/ready"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dim14sp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tendp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/twentydp"
+                    android:layout_height="@dimen/twentydp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/preparing"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:layout_width="@dimen/twentydp"
+                    android:layout_height="@dimen/twentydp"
+                    android:src="@drawable/order_preparingfile" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/fivedp"
+                    android:text="@string/preparing"
+                    android:textColor="@color/dark_yellow"
+                    android:textSize="@dimen/dim12sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim1dp"
+        android:layout_marginTop="@dimen/fivedp"
+        android:background="@color/light_black" />
+</androidx.appcompat.widget.LinearLayoutCompat>

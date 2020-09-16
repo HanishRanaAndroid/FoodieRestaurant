@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "881133146273",
+    "firebase_url": "https://restaurantapp-a753c.firebaseio.com",
+    "project_id": "restaurantapp-a753c",
+    "storage_bucket": "restaurantapp-a753c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881133146273:android:3978727cbd9bf5140e60e0",
+        "android_client_info": {
+          "package_name": "com.valle.resturantfoodieapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881133146273-qbsco43g24alnoqpr01638vf21fhqeid.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.valle.resturantfoodieapp",
+            "certificate_hash": "c7fcd0f3b0b8a3a78532a243f19ee680ef94a53b"
+          }
+        },
+        {
+          "client_id": "881133146273-eltfdir6nl89cp8f3ughnso7ess4hvrb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3_j3pz1QHG7U9vRk_W9orCXj5PktN9TA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881133146273-eltfdir6nl89cp8f3ughnso7ess4hvrb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/creme_white"
+    android:orientation="vertical"
+    android:padding="@dimen/tendp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.valle.resturantfoodieapp.utils.RoundedImageView
+                android:id="@+id/ivCOrderImage"
+                android:layout_width="@dimen/dim100dp"
+                android:layout_height="@dimen/dim100dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/as" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:orientation="vertical"
+                android:padding="@dimen/fivedp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvCOrderNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteensp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvCOrderAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fivedp"
+                    android:text=""
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/dim14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvCNoOfItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fivedp"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/dim14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fivedp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvPaymentType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/dim12sp" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvCOrderDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/tvPaymentType"
+                        android:gravity="right"
+                        android:text=""
+                        android:textSize="@dimen/dim12sp" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim1dp"
+            android:layout_marginTop="@dimen/fivedp"
+            android:background="@color/light_black" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fivedp"
+            android:text="@string/customer_detail"
+            android:textColor="@color/foodie_color"
+            android:textSize="@dimen/sixteensp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fivedp"
+            android:text=""
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/dim14sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCustomerAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fivedp"
+            android:text=""
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/dim14sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCustomerPhoneNumver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fivedp"
+            android:text=""
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/dim14sp"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCustomerNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_with_border"
+            android:padding="@dimen/tendp"
+            android:text=""
+            android:textSize="@dimen/dim14sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim1dp"
+            android:layout_marginTop="@dimen/fivedp"
+            android:background="@color/light_black" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAssistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/tendp"
+                android:background="@drawable/rectangular_radius_orage_color"
+                android:gravity="center"
+                android:padding="@dimen/fifteendp"
+                android:text="@string/assistance"
+                android:textColor="@color/foodie_color"
+                android:textSize="@dimen/dim14sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fifteendp"
+            android:layout_marginBottom="@dimen/fortydp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fivedp"
+                android:text="@string/other_detail"
+                android:textColor="@color/foodie_color"
+                android:textSize="@dimen/sixteensp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llOrderedItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fifteendp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/total"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/dim14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvItemsTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/dim14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fifteendp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/delivery_fees"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/dim14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDeliveryFees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/dim14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fifteendp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/service_tax"
+                    android:textColor="@color/foodie_color"
+                    android:textSize="@dimen/dim14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvServiceTax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/dim14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fifteendp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/discount"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/dim14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDiscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/dim14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim1dp"
+                android:layout_marginTop="@dimen/tendp"
+                android:background="@color/light_black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fifteendp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvGrandTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteensp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim1dp"
+                android:layout_marginTop="@dimen/tendp"
+                android:layout_marginBottom="@dimen/twentydp"
+                android:background="@color/light_black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOrderReady"
+                android:layout_width="@dimen/dim250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/tendp"
+                android:background="@drawable/rectangular_back_green"
+                android:gravity="center"
+                android:padding="@dimen/fifteendp"
+                android:text="@string/order_ready"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dim14sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/creme_white"
+    android:orientation="vertical"
+    tools:context=".fragment.AddMenuItemFragment">
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCoverPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/most_light_white" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <com.valle.resturantfoodieapp.utils.RoundRectCornerImageView
+                    android:id="@+id/ivRestaurantImage"
+                    android:layout_width="@dimen/dim120dp"
+                    android:layout_height="@dimen/dim120dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvRestaurantName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sixteensp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivEdit"
+                    android:layout_width="@dimen/thirtydp"
+                    android:layout_height="@dimen/thirtydp"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="@dimen/twentydp"
+                    android:src="@drawable/edit_icon" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </FrameLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/tendp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvRestName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/twenty_sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fivedp"
+                    android:text="Fine Dining - Continental,Itailian,European"
+                    android:textSize="@dimen/dim14sp"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvRestAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fivedp"
+                    android:text=""
+                    android:textSize="@dimen/dim14sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <LinearLayout
+                android:layout_width="@dimen/fiftydp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/tendp"
+                android:background="@drawable/edit_background"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/green"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim1dp"
+            android:layout_marginLeft="@dimen/tendp"
+            android:layout_marginRight="@dimen/tendp"
+            android:background="@color/light_black" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/tendp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fifteendp"
+                android:text="@string/add_new_item_in_menu"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteensp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_marginTop="@dimen/twentydp"
+                android:orientation="horizontal">
+
+                <com.valle.resturantfoodieapp.utils.RoundedImageView
+                    android:id="@+id/ivItemImage"
+                    android:layout_width="@dimen/dim80dp"
+                    android:layout_height="@dimen/dim80dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dish" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvUploadImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/tendp"
+                    android:gravity="center"
+                    android:text="@string/upload_item_image"
+                    android:textColor="@color/foodie_color"
+                    android:textSize="@dimen/dim14sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_marginTop="@dimen/tendp"
+                android:text="@string/restaurant_name"
+                android:textColor="@color/foodie_color"
+                android:textSize="@dimen/sixteensp"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_marginTop="@dimen/tendp"
+                android:layout_marginRight="@dimen/thirtydp"
+                android:background="@drawable/rectangular_with_black_borger"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/user" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fiftydp"
+                    android:layout_marginLeft="@dimen/tendp"
+                    android:background="@null"
+                    android:gravity="start|center"
+                    android:shadowColor="@color/shadow_color"
+                    android:textColor="@color/light_black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/dim14sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_marginTop="@dimen/tendp"
+                android:text="@string/item_category"
+                android:textColor="@color/foodie_color"
+                android:textSize="@dimen/sixteensp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_marginTop="@dimen/tendp"
+                android:layout_marginRight="@dimen/thirtydp"
+                android:background="@drawable/rectangular_with_black_borger"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/thirtydp"
+                    android:layout_height="@dimen/thirtydp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/category" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spnItemCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fortydp"
+                    android:layout_marginLeft="@dimen/tendp"
+                    android:background="@null"
+                    android:gravity="start|center"
+                    android:shadowColor="@color/shadow_color"
+                    android:textColor="@color/light_black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/dim14sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_marginTop="@dimen/tendp"
+                android:text="@string/item_name"
+                android:textColor="@color/foodie_color"
+                android:textSize="@dimen/sixteensp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_marginTop="@dimen/tendp"
+                android:layout_marginRight="@dimen/thirtydp"
+                android:background="@drawable/rectangular_with_black_borger"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/thirtydp"
+                    android:layout_height="@dimen/thirtydp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/itemname" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etitemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fortydp"
+                    android:layout_marginLeft="@dimen/tendp"
+                    android:background="@null"
+                    android:gravity="start|center"
+                    android:shadowColor="@color/shadow_color"
+                    android:textColor="@color/light_black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/dim14sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_marginTop="@dimen/tendp"
+                android:text="Have Any Flavours?"
+                android:textColor="@color/foodie_color"
+                android:textSize="@dimen/sixteensp" />
+
+            <RadioGroup
+                android:id="@+id/radioFlavour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/thirtydp"
+                android:layout_marginTop="@dimen/tendp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:id="@+id/rNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fifteendp"
+                    android:text="@string/no" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llViewForFlavours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/thirtydp"
+                android:layout_marginTop="@dimen/tendp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:padding="@dimen/tendp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Flavour"
+                    android:textColor="@color/foodie_color"
+                    android:textSize="@dimen/sixteensp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivAddFlavour"
+                    android:layout_width="@dimen/twentydp"
+                    android:layout_height="@dimen/twentydp"
+                    android:layout_marginStart="@dimen/fortydp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_plus" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/tendp"
+                    android:layout_height="@dimen/tendp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/fifteendp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/left_arrow" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/fivedp"
+                    android:text="Click here to add more.."
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/tensp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llFlavour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_margin="@dimen/tendp"
+                android:orientation="vertical" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_marginTop="@dimen/tendp"
+                android:text="@string/item_price"
+                android:textColor="@color/foodie_color"
+                android:textSize="@dimen/sixteensp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_marginTop="@dimen/tendp"
+                android:layout_marginRight="@dimen/thirtydp"
+                android:background="@drawable/rectangular_with_black_borger"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/thirtydp"
+                    android:layout_height="@dimen/thirtydp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/itemprice" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etItemPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fortydp"
+                    android:layout_marginLeft="@dimen/tendp"
+                    android:background="@null"
+                    android:gravity="start|center"
+                    android:shadowColor="@color/shadow_color"
+                    android:textColor="@color/light_black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/dim14sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_marginTop="@dimen/tendp"
+                android:text="@string/item_description"
+                android:textColor="@color/foodie_color"
+                android:textSize="@dimen/sixteensp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etItemDescription"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim100dp"
+                android:layout_marginLeft="@dimen/twentyfivedp"
+                android:layout_marginTop="@dimen/tendp"
+                android:layout_marginRight="@dimen/twentyfivedp"
+                android:background="@drawable/rectangular_with_black_borger"
+                android:gravity="start"
+                android:padding="@dimen/tendp"
+                android:shadowColor="@color/shadow_color"
+                android:text=""
+                android:textColor="@color/light_black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/dim14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSubmitItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirtydp"
+                android:layout_marginTop="@dimen/thirtydp"
+                android:layout_marginRight="@dimen/thirtydp"
+                android:layout_marginBottom="@dimen/fortydp"
+                android:background="@drawable/btn_red_back"
+                android:gravity="center"
+                android:padding="@dimen/tendp"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dim14sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+</ScrollView>

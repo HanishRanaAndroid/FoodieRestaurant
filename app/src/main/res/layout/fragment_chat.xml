@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottomLayout"
+        android:layout_margin="@dimen/tendp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llBottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/shadow_color"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/twentyfivedp"
+            android:layout_height="@dimen/twentyfivedp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/tendp"
+            android:src="@drawable/attachement"
+            android:tint="@color/foodie_color" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="@dimen/dim250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/edit_background"
+            android:hint="@string/type_message"
+            android:padding="@dimen/tendp"
+            android:paddingTop="@dimen/tendp"
+            android:textSize="@dimen/dim14sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/tendp"
+            android:text="@string/send"
+            android:textColor="@color/foodie_color"
+            android:textSize="@dimen/eighteensp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Privacidad y política Foodie Media Private Limited y / o sus filiales Foodie, la Compañía, nosotros, nosotros y nuestro,) respetamos su privacidad y se compromete a protegerla mediante el cumplimiento de sus políticas de privacidad. Esta política describe: los tipos de información que Foodie puede recopilar de usted cuando accede o utiliza sus sitios web, aplicaciones y otros servicios en línea (colectivamente, denominados Servicios); y sus prácticas para recopilar, usar, mantener, proteger y divulgar esa información. Esta política se aplica solo a la información que Foodie recopila a través de sus Servicios, en correos electrónicos, mensajes de texto y otras comunicaciones electrónicas enviadas a través de sus Servicios o en relación con ellos. Esta política NO SE APLICA a la información que proporcione o que sea recopilada por un tercero, como restaurantes en los que realiza reservas y / o paga a través de los Servicios de Foodie y las redes sociales que utiliza en relación con sus servicios Foodie lo alienta a consultar directamente con dichos terceros sobre sus prácticas de privacidad. Lea esta política detenidamente para comprender las políticas y prácticas de Foodie con respecto a su información y cómo la tratará Foodie.Al acceder o utilizar sus Servicios
+        y/o registrarse para obtener una cuenta con Foodie, usted acepta esta política de privacidad y acepta la recopilación, uso, divulgación, retención y protección de su información personal de Foodie como se describe aquí. Si no proporciona la información que Foodie requiere, es posible que Foodie no pueda proporcionarle todos sus Servicios. Si reside en un país dentro de la Unión Europea / Área Económica Europea (EAA), Foodie Media Portugal, Unipessoal LDA, ubicado en la Avenida 24 de Julho, N 102-E, 1200-870, Lisboa, Portugal, será el controlador de sus datos personales proporcionados, o recopilados por o para, o procesados ​​en relación con nuestros Servicios; Si reside en los Estados Unidos de América, Foodie USA LLC, ubicada en 601 S. Cedar Street, Suite 111, Charlotte, NC 28202 será el controlador de sus datos personales proporcionados, recopilados por o para, o procesados ​​en relación con Nuestros servicios; Si reside en cualquier otra parte del mundo, Foodie Media Private Limited, ubicada en Ground Floor, Tower C, Vipul Tech Square, Sector 43, Golf Course Road, Gurugram - 122009, Haryana, India, será el controlador de sus datos personales. provisto, o recolectado por o para, o procesado en relación con nuestros Servicios. Su controlador de datos es responsable de la recopilación, uso, divulgación, retención y protección de su información personal de acuerdo con sus estándares de privacidad, así como con las leyes nacionales aplicables. Su controlador de datos puede transferir datos a otros miembros de Foodie como se describe en esta Política de privacidad. Foodie puede procesar y retener su información personal en sus servidores en India, donde se encuentran sus centros de datos, y / o en los servidores de sus terceros (dentro o fuera de India), que tienen relaciones contractuales con Foodie. Esta política puede cambiar de vez en cuando, su uso continuado de los Servicios de Foodie \ 's después de realizar cualquier cambio se considera aceptación
+        de dichos cambios, por lo tanto, consulte la política periódicamente para obtener actualizaciones."
+            android:textSize="@dimen/sixteensp" />
+    </ScrollView>
+</FrameLayout>
